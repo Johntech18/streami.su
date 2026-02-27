@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Streami — Watch Movies & Shows Online</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-bg"></div>
+    <header class="topbar">
+      <a class="logo" href="#">streami<span>.su</span></a>
+      <nav class="menu">
+        <a href="#trending">Trending</a>
+        <a href="#new">New</a>
+        <a href="#genres">Genres</a>
+      </nav>
+      <button class="btn ghost">Sign in</button>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Now streaming</p>
+          <h1>Everything worth watching in one place.</h1>
+          <p class="lead">
+            Discover trending movies, binge-worthy shows, and fresh weekly releases curated for you.
+          </p>
+          <div class="actions">
+            <button class="btn primary">Start Watching</button>
+            <button class="btn secondary" id="openTrailer">Watch Trailer</button>
+          </div>
+        </div>
+        <div class="hero-card">
+          <p class="small">Featured pick</p>
+          <h3>Neon Horizon</h3>
+          <p>Season 2 · Sci-Fi · 2026</p>
+          <div class="progress">
+            <span style="width: 62%"></span>
+          </div>
+          <p class="small muted">62% watched</p>
+        </div>
+      </section>
+
+      <section id="trending" class="section">
+        <div class="section-title">
+          <h2>Trending now</h2>
+          <a href="#">View all</a>
+        </div>
+        <div class="grid cards"></div>
+      </section>
+
+      <section id="new" class="section">
+        <div class="section-title">
+          <h2>New releases</h2>
+        </div>
+        <div class="grid releases"></div>
+      </section>
+
+      <section id="genres" class="section genres">
+        <div class="section-title">
+          <h2>Browse by genre</h2>
+        </div>
+        <div class="chips">
+          <button>Action</button>
+          <button>Drama</button>
+          <button>Sci-Fi</button>
+          <button>Thriller</button>
+          <button>Animation</button>
+          <button>Documentary</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal" id="trailerModal" aria-hidden="true">
+      <div class="modal-box">
+        <button class="close" id="closeTrailer" aria-label="Close">×</button>
+        <h3>Official Trailer</h3>
+        <p>
+          This is a visual replica demo, so no embedded trailer is included. Replace this with your media
+          player source.
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
